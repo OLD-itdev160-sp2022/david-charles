@@ -103,6 +103,9 @@
     var emmet = new Package(data[0]);
     writePackageInfo(emmet);
 
+    var beautify = new Package(data[1]);
+    writePackageInfo(beautify);
+
 
 }()); //Parenthesis at the end call the IFFE
 
