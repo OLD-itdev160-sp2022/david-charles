@@ -32,13 +32,13 @@
             selector: 'p2' 
         },
         {
-            name: 'atom-beautify', 
-            description: 'The atom-beautify package will clean up your code.',
-            author: 'Galvin001',
+            name: 'GitLens', 
+            description: 'Git Lens enables you to view code authorship withing VS Code.',
+            author: 'GitKraken',
             url: 'https://atom.io/packages/atom-beautify',
-            downloads: 4228040,
-            stars: 4541,
-            price: 6.75,
+            downloads: 13575151,
+            stars: 453,
+            price: 0.00,
             selector: 'p3' 
         }
     ];
