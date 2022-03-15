@@ -17,8 +17,7 @@ h1{
 }
 .package-container{
     padding-top: 1em;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 #credits{
     text-align: center;
@@ -31,4 +30,10 @@ h1{
 #imgDiv img {
     padding-top: 1em;
     max-width: 100%;
+}
+#date{
+    text-align: center;
+}
+#last{
+    padding-bottom: 1em;
 }
