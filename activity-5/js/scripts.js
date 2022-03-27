@@ -83,21 +83,21 @@
         var selector = package.selector,
             nameEl = getEl(selector + '-name'),
             descEl = getEl(selector + '-description'),
-            authEl = getEl(selector + '-description'),
+            authEl = getEl(selector + '-author'),
             downloadEl = getEl(selector + '-downloads'),
             starsEl = getEl(selector + '-stars');
 
         //Write package to the DOM elements
-        nameEl.textContext = package.name;
-        descEl.textContext = package.description;
-        authEl.textContext = package.author;
-        downloadEl.textContext = package.getFormattedDownloads();
-        starsEl.textContext = package.getFormattedStars();
+        nameEl.textContent = package.name;
+        descEl.textContent = package.description;
+        authEl.textContent = package.author;
+        downloadEl.textContent = package.getFormattedDownloads();
+        starsEl.textContent = package.getFormattedStars();
     };
 
     //Write date
     var dateEl = getEl('date');
-    dateEl.textContext = getTodaysDate();
+    dateEl.textContent = getTodaysDate();
 
     //Write package data
     var emmet = new Package(data[0]);
@@ -105,6 +105,9 @@
 
     var beautify = new Package(data[1]);
     writePackageInfo(beautify);
+
+    var GitLens = new Package(data[2]);
+    writePackageInfo(GitLens)
 
 
 }()); //Parenthesis at the end call the IFFE
