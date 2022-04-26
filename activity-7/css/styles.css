@@ -1,6 +1,7 @@
 body{
     width: 100%;
     background-color: teal;
+    font-family: 'Josefin Sans',Verdana,Tahoma, sans-serif;
 }
 header{
     background-color: rgb(173, 173, 173);
